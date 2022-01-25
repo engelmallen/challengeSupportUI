@@ -19,54 +19,61 @@
         <input type="text" class="rounded" />
       </div>
 
-      <div id="infoContainer bg-success pt-1">
-        <div id="infoHeader">
+      <div id="infoContainer bg-success">
+        <div id="infoHeader" class="">
           <div
             id="ticketGroup"
-            class="btn-group"
+            class="btn-group bg-warning"
             role="group"
             aria-label="Basic example"
           >
-            <button type="button" class="btn btn-secondary rounded-0">
-              Ticket 1
+            <button type="button" class="btn btn-light px-5">Ticket 1</button>
+            <button type="button" class="btn btn-secondary px-5">
+              Ticket 2
             </button>
-            <button type="button" class="btn btn-secondary">Ticket 2</button>
-            <button type="button" class="btn btn-secondary">Ticket 3</button>
-            <button type="button" class="btn btn-secondary">Add New</button>
+            <button type="button" class="btn btn-secondary px-5">
+              Ticket 3
+            </button>
+            <button type="button" class="btn btn-secondary rounded-0 px-5">
+              Add New
+            </button>
           </div>
-
-          <ul id="ticket1" class="nav nav-tabs">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Message</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Info</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled d-none" href="#">Disabled</a>
-            </li>
-          </ul>
-          <div id="infoMessage w-100">
-            <div
-              id="infoMessageHeader p-3"
-              class="d-inline-flex justify-content-between w-100"
-            >
-              <div>Help! Issues Logging In</div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-paperclip d-flex-end"
-                viewBox="0 0 16 16"
+          <div id="infoBody " class="py-4 w-75 border rounded">
+            <ul id="ticket1" class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Message</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Info</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled d-none" href="#">Disabled</a>
+              </li>
+            </ul>
+            <div id="infoMessage w-100">
+              <div
+                id="infoMessageHeader p-3"
+                class="d-inline-flex justify-content-between w-100"
               >
-                <path
-                  d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z"
-                />
-              </svg>
+                <div class="p-2 text-success font-weight-bold">
+                  Help! Issues Logging In
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-paperclip d-flex-end"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
