@@ -45,10 +45,10 @@
           <div id="infoBody " class="mt-4">
             <ul id="infoBodyTabs" class="nav nav-tabs border-0">
               <li class="nav-item">
-                <a class="nav-link active border-bottom" href="#">Message</a>
+                <a class="nav-link  border-bottom" href="#">Message</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact Info</a>
+                <a class="nav-link active" href="#">Contact Info</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">FAQ</a>
@@ -61,74 +61,110 @@
             <div
               id="infoBodyContains"
               class="p-4 pb-5 border border rounded-bottom rounded-end">
-                <div id="contactInfo" class="border-bottom mb5">
+                <div id="contactInfo" class="">
                   <div class="fw-bolder text-success mb-1">CONTACT</div>
-                  <div id="contactContains" class="row">
-                    <div id="contactTab1" class="row col-6 border">
-                      <div class="fw-bold col-4">Name</div>         <div class="col-6">John Doe</div>
-                      <div class="fw-bold col-4">Email</div>        <div class="col-6">johndoe@gmail.com</div>
-                      <div class="fw-bold col-4">Phone</div>        <div class="col-6">123-456-4567</div>
-                      <div class="fw-bold col-4">Account</div>      <div class="col-6">Deer Funds</div>
-                      <div class="fw-bold col-4">Title</div>        <div class="col-6">1 Hour</div>
-                    </div>
-                    <div id="contactTab2" class="row  col-6 border-success border">
-                      <div class="fw-bold col-4">Department</div>   <div class="col-6">Sales</div>
-                      <div class="fw-bold col-4">Reports To</div>   <div class="col-6">Ashley</div>
-                      <div class="fw-bold col-4">Notify Owner</div> <div class="col-6">No</div>
-                      <div class="fw-bold col-4">Modified</div>     <div class="col-6">Yesterday</div>
-                      <div class="fw-bold col-4">Created</div>      <div class="col-6">March 02, 2017</div>
-                    </div>
-                  </div>
-                  <div class="fw-bolder text-success mb-1">ADDRESS INFORMATION</div>
-                  <div id="contactContains" class=" d-flex flex-row">
-                    <div id="contactTab1" class="row  col-6 border">
-                      <div class="fw-bold col-4">Street</div>      <div class="col-6">1 Broad Street</div>
-                      <div class="fw-bold col-4">City</div>        <div class="col-6">Philadelphia</div>
-                      <div class="fw-bold col-4">Postal Code</div> <div class="col-6">19103</div>
-                    </div>
-                    <div id="contactTab2" class="row  col-6 border-success border">
-                      <div class="fw-bold col-4">PO Box</div>  <div class="col-6">1300</div>
-                      <div class="fw-bold col-4">State</div>   <div class="col-6">PA</div>
-                      <div class="fw-bold col-4">Country</div> <div class="col-6">US</div>
-                    </div>
-                  </div>
-                  <div class="fw-bolder text-success mb-1">TROUBLE TICKET HISTORY</div>
                   <table class="table">
-                    <thead class="borde border-info">
-                      <tr class="border-0">
-                        <th scope="col">Name</th>
-                        <th scope="col">Status</th>
-                        <th scope="col">Dare & Time</th>
-                      </tr>
-                    </thead>
                     <tbody>
                       <tr>
-                        <td>Trouble Ticket 1</td>
-                        <td>Received</td>
-                        <td>02/12/2021</td>
+                        <td class="fw-bold">Name</td>
+                        <td>John Doe</td>
+                        <td class="fw-bold">Department</td>
+                        <td>Sales</td>
                       </tr>
                       <tr>
-                        <td>Trouble Ticket 2</td>
-                        <td>Closed</td>
-                        <td>01/21/2021</td>
+                        <td class="fw-bold">Email</td>
+                        <td>johndoe@gmail.com</td>
+                        <td class="fw-bold">Reports To</td>
+                        <td>Ashley Simmons</td>
                       </tr>
                       <tr>
-                        <td>Trouble Ticket 3</td>
-                        <td>Open</td>
-                        <td>08/05/2021</td>
+                        <td class="fw-bold">Phone</td>
+                        <td>123-456-4567</td>
+                        <td class="fw-bold">Notify Owner</td>
+                        <td>No</td>
                       </tr>
                       <tr>
-                        <td>Trouble Ticket 4</td>
-                        <td>Open</td>
-                        <td>08/05/2020</td>
+                        <td class="fw-bold">Account</td>
+                        <td>Deer Funds</td>
+                        <td class="fw-bold">Modified</td>
+                        <td>Yesterday</td>
                       </tr>
                       <tr>
-                        <td>Trouble Ticket 5</td>
-                        <td>Closed</td>
-                        <td>12/25/2021</td>
+                        <td class="fw-bold">Title</td>
+                        <td>1 Hour</td>
+                        <td class="fw-bold">Created</td>
+                        <td>March 02, 2017</td>
                       </tr>
                     </tbody>
                   </table>
+
+                  <div id="addressInformation">
+                    <div class="fw-bolder text-success mb-1">ADDRESS INFORMATION</div>
+                    <table class="table">
+                      <tbody>
+                        <tr>
+                          <td class="fw-bold">Street</td>
+                          <td>1 Broad Street</td>
+                          <td class="fw-bold">PO Box</td>
+                          <td>1300</td>
+                        </tr>
+                        <tr>
+                          <td class="fw-bold">City</td>
+                          <td>Philadelphia</td>
+                          <td class="fw-bold">State</td>
+                          <td>PA</td>
+                        </tr>
+                        <tr>
+                          <td class="fw-bold">Postal COde</td>
+                          <td>19103</td>
+                          <td class="fw-bold">Country</td>
+                          <td>US</td>
+                        </tr>
+
+
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <div id="troubleTicketHistory">
+                  <div class="fw-bolder text-success mb-1">TROUBLE TICKET HISTORY</div>
+                    <table class="table">
+                      <thead class="borde border-info">
+                        <tr class="border-0">
+                          <th scope="col">Name</th>
+                          <th scope="col">Status</th>
+                          <th scope="col">Dare & Time</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Trouble Ticket 1</td>
+                          <td>Received</td>
+                          <td>02/12/2021</td>
+                        </tr>
+                        <tr>
+                          <td>Trouble Ticket 2</td>
+                          <td>Closed</td>
+                          <td>01/21/2021</td>
+                        </tr>
+                        <tr>
+                          <td>Trouble Ticket 3</td>
+                          <td>Open</td>
+                          <td>08/05/2021</td>
+                        </tr>
+                        <tr>
+                          <td>Trouble Ticket 4</td>
+                          <td>Open</td>
+                          <td>08/05/2020</td>
+                        </tr>
+                        <tr>
+                          <td>Trouble Ticket 5</td>
+                          <td>Closed</td>
+                          <td>12/25/2021</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               
               
@@ -149,7 +185,7 @@
               </ul>
             </div>
 
-            <div id="sideFollowUp" class="row border p-1 my-1 rounded">
+            <div id="sideFollowUp" class="row border p-1 my-3 rounded">
               <div class="col">
                 <input
                   id="followUpCheck"
@@ -180,7 +216,7 @@
               </button>
             </div>
 
-            <div id="sideTags" class="row border p-1 rounded">
+            <div id="sideTags" class="row border p-1 mb-3 rounded">
               <div class="col-1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -202,75 +238,56 @@
               <button class="btn-info col-2 rounded-end">Add</button>
             </div>
 
-            <div id="sideLoginIssue" class="row p-2 mt-2 border">
-              <ul class="list-group list-group-flush p-0">
-                <li
-                  class="list-group-item justify-content-between d-flex flex-row"
-                >
-                  <div class="col fw-bold">Ticket Duration</div>
-                  <div class="col">1 Hour</div>
-                </li>
-                <li
-                  class="list-group-item justify-content-between d-flex flex-row"
-                >
-                  <div class="col fw-bold">Email Thread Status</div>
-                  <div class="col">Received</div>
-                </li>
-                <li
-                  class="list-group-item justify-content-between d-flex flex-row"
-                >
-                  <div class="col fw-bold">Priority</div>
-                  <div class="col">Low</div>
-                </li>
-                <li
-                  class="list-group-item justify-content-between d-flex flex-row"
-                >
-                  <div class="col fw-bold">Status</div>
-                  <div class="col">Open</div>
-                </li>
-                <li
-                  class="list-group-item justify-content-between d-flex flex-row"
-                >
-                  <div class="col fw-bold">Type</div>
-                  <div class="col">1 Hour</div>
-                </li>
-                <li
-                  class="list-group-item justify-content-between d-flex flex-row"
-                >
-                  <div class="col fw-bold">Watcher</div>
-                  <div class="col">John Doe</div>
-                </li>
-                <li
-                  class="list-group-item justify-content-between d-flex flex-row"
-                >
-                  <div class="col fw-bold">Tags</div>
-                  <div class="col">General</div>
-                </li>
-                <li
-                  class="list-group-item justify-content-between d-flex flex-row"
-                >
-                  <div class="col fw-bold">Related Account</div>
-                  <div class="col"></div>
-                </li>
-                <li
-                  class="list-group-item justify-content-between d-flex flex-row"
-                >
-                  <div class="col fw-bold">Related Contact</div>
-                  <div class="col"></div>
-                </li>
-                <li
-                  class="list-group-item justify-content-between d-flex flex-row"
-                >
-                  <div class="col fw-bold">Email</div>
-                  <div class="col"></div>
-                </li>
-                <li
-                  class="list-group-item justify-content-between d-flex flex-row"
-                >
-                  <div class="col fw-bold">Assigned To</div>
-                  <div class="col"></div>
-                </li>
-              </ul>
+            <div id="loginIssueTable" class="border p-3 m-0">
+              <table class="table">
+                <tbody>
+                  <div class="fw-bolder text-success mb-1">LOGIN ISSUE</div>
+                  <tr>
+                    <td class="fw-bold">Ticket Duration</td>
+                    <td>1 Hour</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-bold">Email Thread Status</td>
+                    <td>Received</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-bold">Priority</td>
+                    <td>Low</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-bold">Status</td>
+                    <td>Open</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-bold">Type</td>
+                    <td>1 Hour</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-bold">Watcher</td>
+                    <td>John Doe</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-bold">Tags</td>
+                    <td>General</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-bold">Related Account</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="fw-bold">Related Account</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="fw-bold">Email</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="fw-bold">Assigned To</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
