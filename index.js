@@ -29,7 +29,6 @@ let ticketAdd = () =>{
   return addButton
 }
 
-
 let ticketValidation = () => {
     for( i = 0; i < ticketItem.length; i++)
         { 
