@@ -26,11 +26,21 @@
 }
 
 
-#ticketGroup div{
+/* #ticketGroup div{
     color: #16aa9c;
+} */
+
+#ticketGroup li{
+    background: #0e978d;
+    color: #056863;
+
 }
 
 #ticketGroup li:hover{
     background: #e7fff9;
 
+}
+
+.unsTicket{
+    background: #0e978d;
 }
