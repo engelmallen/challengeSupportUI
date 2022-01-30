@@ -28,21 +28,12 @@ let ticketAdd = () =>{
   return addButton
 }
 
-// let changeIt = (ticketButton) => {
-//     console.log(ticketCurVal)
-//     ticketCurVal = ticketButton.id;
-//     ticketValidation()
-//     console.log(ticketCurVal)
-// }
-
-
 
 let ticketValidation = () => {
     for( i = 0; i < ticketItem.length; i++)
         { 
             if(ticketItem[i].id === ticketCurVal){
                 ticketItem[i].style.background = "#f4f8f7";
-
                 } 
             }
     }
@@ -50,9 +41,10 @@ let ticketValidation = () => {
 let ticketEvent = () => {
     for( i = 0; i < ticketItem.length; i++)
         {   console.log(ticketItem[i].id + " is touched")
-            ticketItem[i].addEventListener('click', function(a){
-            ticketCurVal = a.target.id;
-            console.log(ticketCurVal) 
+            ticketItem[i].addEventListener('click', function (e) {
+            ticketCurVal = e.target.parentElement.id;
+            console.log(ticketCurVal)  
+            doIt()
         })
  
             }
@@ -60,14 +52,12 @@ let ticketEvent = () => {
 
 
 const createTickets = () =>{
-    ticketGroup.innerHTML = "";
-    ticketList.map((i)=>{
-        ticketGroup.innerHTML += ticket(i)
-        // if()
-    })
-    ticketGroup.innerHTML += ticketAdd();
+        ticketGroup.innerHTML = "";
+        ticketList.map((i)=>{
+            ticketGroup.innerHTML += ticket(i)
+            })
+        ticketGroup.innerHTML += ticketAdd();
     }
-    // ticketGroup.innerHTML += ticket('Hellos darkness my old friend')
 
 
 let doIt = () => {

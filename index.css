@@ -37,10 +37,15 @@
 }
 
 #ticketGroup li:hover{
-    background: #e7fff9;
+    background: #05523e;
+    color: #16aa9c;
 
 }
 
 .unsTicket{
     background: #0e978d;
+}
+
+#infoBodyTabs ul{
+    
 }
