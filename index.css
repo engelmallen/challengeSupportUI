@@ -1,3 +1,36 @@
-*{
+/* *{
     padding: 0;
+} */
+
+.motherGrey {
+    background: #36404a;
+}
+
+.MotherSecundaryGray{
+    background: #4b535e;
+}
+.motherGreen {
+    background: #16aa9c;
+}
+
+/* #ticketGroup button {
+    background: #f4f8f7;
+    color: #16aa9c;
+    font-weight: bolder;
+} */
+
+#infoHeader ul button.close {
+    background-image: url(http://www.w3.org/2000/svg);
+    width: 10px;
+    height: 10px;
+}
+
+
+#ticketGroup div{
+    color: #16aa9c;
+}
+
+#ticketGroup li:hover{
+    background: #e7fff9;
+
 }

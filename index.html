@@ -10,34 +10,27 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link href="index.css" />
+    <link href="index.css" rel="stylesheet"/>
     <title>Document</title>
   </head>
   <body>
     <div id="containerWhole" class="container">
       <div id="container" class="row">
         <div id="header" class="col-12">
-          <div id="searchBarArea" class="bg-secondary p-2">
-            <input type="text" class="rounded" />
+          <div id="searchBarArea" class="p-3 motherGrey">
+            <input type="text" class="rounded border-0 rounded-pill MotherSecundaryGray" />
           </div>
-          <div id="infoHeader" class="">
-            <div
-              id="ticketGroup"
-              class="btn-group bg-warning"
-              role="group"
-              aria-label="Basic example"
-            >
-              <button type="button" class="btn btn-light px-5">Ticket 1</button>
-              <button type="button" class="btn btn-secondary px-5">
-                Ticket 2
-              </button>
-              <button type="button" class="btn btn-secondary px-5">
-                Ticket 3
-              </button>
-              <button type="button" class="btn btn-secondary rounded-0 px-5">
-                Add New
-              </button>
-            </div>
+          <div id="infoHeader" class="pt-2 motherGreen">
+            <ul id="ticketGroup" class="list-group list-group-horizontal">
+              <li class="list-group-item d-flex justify-content-between align-items-left border border-light rounded-0">
+                <div class="align-flex-center px-5 py-1 fs-5 fw-bolder">Ticket 1</div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#16aa9c" class="bi bi-x-lg align-self-center" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
+                  <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
+                </svg>
+              </li>
+            </ul>
+
           </div>
         </div>
 
