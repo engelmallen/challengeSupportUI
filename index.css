@@ -46,6 +46,15 @@
     background: #0e978d;
 }
 
-#infoBodyTabs ul{
-    
+#infoBodyTabs li{
+    background: #f2f2f2;
+
+}
+
+#infoBodyTabs a[class=active] {
+    color: red;
+}
+
+#infoBodyTabs a[class= inactive] {
+    color: red;
 }

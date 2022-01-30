@@ -2,6 +2,7 @@ let ticketGroup = document.getElementById('ticketGroup')
 let ticketItem = document.getElementsByClassName('ticketItem')
 
 let ticketCurVal= "Ticket 1"
+let infoBodyItems= ""
 
 
 let ticketList = ["Ticket 1","Ticket 2","Ticket 3"]
