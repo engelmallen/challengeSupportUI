@@ -22,7 +22,7 @@ let infoMessageCall = () => {
 
   <div
     id="infoMessageArea"
-    class="bg-light p-1 border rounded"
+    class="bg-light p-1 mt-2 border rounded"
     height="1000"
   >
 

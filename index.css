@@ -5,6 +5,11 @@
 *{
     box-sizing: border-box; 
 }
+
+body{
+    background: #f4f8f7;
+}
+
 .motherGrey {
     background: #36404a;
 }
@@ -25,6 +30,10 @@
 }
 .motherGreenColor {
     color: #16aa9c;
+}
+
+#infoBodyContains, #sideMenu, #sideTags, #loginIssueTable, #sideFollowUp{
+    background: #ffffff;
 }
 
 
@@ -49,6 +58,10 @@
     background: #0e978d;
     color: #056863;
 
+}
+
+#addNew{
+    background: #0c8b80 !important;
 }
 
 #ticketGroup li:hover{
@@ -96,3 +109,6 @@ textarea:focus{
     width: 200px;
 }
 
+#sideMenu li, #sideFollowUp div{
+    color: #4b535e;
+}

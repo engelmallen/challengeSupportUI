@@ -1,6 +1,6 @@
 
 let infoBodyContact = () => {
-    return `
+    return ` 
  <div id="contactInfo" class="">
    
    <div class="fw-bolder d-flex justify-content-between text-success mb-1">CONTACT

@@ -18,7 +18,7 @@
       <div id="container" class="row">
         <div id="header" class="col-12">
           <div id="searchBarArea" class="p-3 motherGrey">
-            <input type="text" class="rounded border-0 rounded-pill MotherSecundaryGray" />
+            <input type="text" class="rounded border-0 ms-4 p-1  rounded-pill MotherSecundaryGray" />
           </div>
           <div id="infoHeader" class="pt-2 motherGreen w-sm-100">
             <ul id="ticketGroup" class="list-group list-group-horizontal">
@@ -27,7 +27,7 @@
 
           </div>
         </div>
-
+        
         <div id="infoContent" class="col-7">
           <div id="infoBody" class="pt-4 px-5 h-100">
             <ul id="infoBodyTabs" class="nav nav-tabs border-0">
@@ -66,7 +66,7 @@
         
           <div
             id="infoMessageArea"
-            class="bg-light p-1 border rounded"
+            class="bg-light p-1 border mt-2 rounded"
             height="1000"
           >
         
@@ -128,32 +128,50 @@
 
 
         <div id="infoDashboard" class="col-5">
-          <div id="infoSide" class="px-5 mt-4 rounded pt-5">
+          <div id="infoSide" class="px-5 mt-4 pt-5">
             <div id="sideMenu" class="">
-              <ul class="list-group-horizontal p-1 row">
-                <li class="list-group-item col-6 py-2">Edit</li>
-                <li class="list-group-item col-6 py-2">Change Status</li>
-                <li class="list-group-item col-6 py-2">Merge</li>
-                <li class="list-group-item col-6 py-2">Add to FAQ</li>
+              <ul id="sideMenuList" class="list-group-horizontal p-2 d-flex flex-wrap mb-2 border rounded fw-bold">
+                <li class="list-group-item border-start-0 border-top-0  col-6 py-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square mx-2" viewBox="0 0 16 16">
+                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                  </svg>
+                  Edit
+                </li>
+                <li class="list-group-item border-0 border-bottom col-6 py-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle-fill mx-2" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                  </svg>
+                  Change Status</li>
+                <li class="list-group-item border-0 border-end col-6 py-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shuffle mx-2" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.26-.43.636-.98 1.126-1.532C9.173 4.24 10.798 3 13 3v1c-1.798 0-3.173 1.01-4.126 2.082A9.624 9.624 0 0 0 7.556 8a9.624 9.624 0 0 0 1.317 1.918C9.828 10.99 11.204 12 13 12v1c-2.202 0-3.827-1.24-4.874-2.418A10.595 10.595 0 0 1 7 9.05c-.26.43-.636.98-1.126 1.532C4.827 11.76 3.202 13 1 13H.5a.5.5 0 0 1 0-1H1c1.798 0 3.173-1.01 4.126-2.082A9.624 9.624 0 0 0 6.444 8a9.624 9.624 0 0 0-1.317-1.918C4.172 5.01 2.796 4 1 4H.5a.5.5 0 0 1-.5-.5z"/>
+                    <path d="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192zm0 9v-3.932a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192z"/>
+                  </svg>Merge</li>
+                <li class="list-group-item border-0 col-6 py-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle-fill mx-2" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
+                  </svg>
+                  Add to FAQ</li>
               </ul>
             </div>
 
-            <div id="sideFollowUp" class="row border p-1 my-1 rounded">
-              <div class="col">
+            <div id="sideFollowUp" class="d-flex border rounded">
+              <div class="align-self-center">
                 <input
                   id="followUpCheck"
                   type="checkbox"
-                  class="form-check-input ml-5"/>
-                  <label class="form-check-label" for="followUpCheck">Follow Up</label>
+                  class="form-check-input ms-2 me-3 "/>
+                  <label class="form-check-label fw-bold" for="followUpCheck">Follow Up</label>
               </div>
-              <div class="col-4">April 10, 2017</div>
-              <button class="btn-info col-2 rounded-end">
+              <div class="flex-grow-1 text-end align-self-center pe-4 MotherSecundaryGrayColor py-2" >April 10, 2017</div>
+              <button class="motherGreen text-light col-2 border-0 p-0 rounded-end">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
+                  width="20"
+                  height="20"
                   fill="currentColor"
-                  class="bi bi-calendar-check"
+                  class="bi bi-calendar-check align-self-center"
                   viewBox="0 0 16 16">
                   <path
                     d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"
@@ -165,14 +183,14 @@
               </button>
             </div>
 
-            <div id="sideTags" class="d-flex ps-3 flex-justify-between border mb-2 rounded">
+            <div id="sideTags" class="d-flex ps-3 flex-justify-between border my-2 rounded">
              
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
                   fill="currentColor"
-                  class="bi bi-tags me-3 align-self-center"
+                  class="bi bi-tags me-3 bg-light align-self-center"
                   viewBox="0 0 16 16"
                 >
                   <path
@@ -240,6 +258,7 @@
             </div>
           </div>
         </div>
+
       </div>
     </div>
     
