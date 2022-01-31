@@ -88,7 +88,7 @@ const tabsBackground = () => {
         })  
     }
 }
- tabsBackground()
+tabsBackground()
 
 infoMessage.addEventListener('click', function(){
     console.log('infoMessage has been activated!!');

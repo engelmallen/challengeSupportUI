@@ -84,3 +84,15 @@ textarea:focus{
 .rotate45{
     transform: rotate(320deg);
 }
+
+/*Dashboard Styles*/
+#loginIssueTable td{
+    font-size: small;
+}
+
+#loginIssueTable td:nth-child(1){
+    color: #36404a;
+    font-weight: bold;
+    width: 200px;
+}
+

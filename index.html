@@ -165,14 +165,14 @@
               </button>
             </div>
 
-            <div id="sideTags" class="row border p-1 rounded">
-              <div class="col-1">
+            <div id="sideTags" class="d-flex ps-3 flex-justify-between border mb-2 rounded">
+             
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
                   fill="currentColor"
-                  class="bi bi-tags"
+                  class="bi bi-tags me-3 align-self-center"
                   viewBox="0 0 16 16"
                 >
                   <path
@@ -182,15 +182,15 @@
                     d="M5.5 5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm0 1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM1 7.086a1 1 0 0 0 .293.707L8.75 15.25l-.043.043a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 0 7.586V3a1 1 0 0 1 1-1v5.086z"
                   />
                 </svg>
-              </div>
-              <div class="col">add Tags</div>
-              <button class="btn-info col-2 rounded-end">Add</button>
+              
+              <input type="text" class="col border-0" placeholder="Add Tags">
+              <button class="motherGreen text-light col-2 py-2 border-0 p-0 rounded-end">Add</button>
             </div>
 
             <div id="loginIssueTable" class="border p-3 m-0">
               <table class="table">
-                <tbody>
-                  <div class="fw-bolder text-success mb-1">LOGIN ISSUE</div>
+                <tbody class=" row">
+                  <div class="logInIssueTitle fw-bolder text-success mb-1 px-2">LOGIN ISSUE</div>
                   <tr>
                     <td class="fw-bold">Ticket Duration</td>
                     <td>1 Hour</td>
