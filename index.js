@@ -1,11 +1,13 @@
 let ticketGroup = document.getElementById('ticketGroup')
 let ticketItem = document.getElementsByClassName('ticketItem')
-let infoContent = document.getElementById('infoContent')
-let infoContact = document.getElementById('infoContact')
+let infoBodyContains = document.getElementById('infoBodyContains')
+let infoBodyItems = document.getElementsByClassName('infoBodyItems')
 let infoMessage = document.getElementById('infoMessage')
+let contactInfo = document.getElementById('contactInfo')
+let faq = document.getElementById('faq')
 
 let ticketCurVal= "Ticket 1"
-let infoBodyItems= ""
+// let infoBodyItems= ""
 
 
 let ticketList = ["Ticket 1","Ticket 2","Ticket 3"]
@@ -48,9 +50,8 @@ let ticketEvent = () => {
             ticketCurVal = e.target.parentElement.id;
             console.log(ticketCurVal)  
             finishTickets()
-        })
- 
-            }
+            })
+        }
     }
 
 
@@ -72,10 +73,34 @@ finishTickets()
 
 //info Creation: (infoContent)
 
-infoMessage.addEventListener('click', function(){
-    infoContent.innerHTML = infoMessageCall()}
-   ) 
+const makeThemDark = () => {
+    for (i = 0; i < infoBodyItems.length; i++) {
+        console.log(infoBodyItems[i])
+        infoBodyItems[i].classList = "nav-link py-3 px-5 infoBodyItems text-secondary"; 
+        }  
+    }
+    
+const tabsBackground = () => {
+    for (i = 0; i < infoBodyItems.length; i++) {
+        infoBodyItems[i].addEventListener('click', function(e){
+            makeThemDark()
+            e.target.classList = "nav-link py-3 px-5 active infoBodyItems text-secondary"  
+        })  
+    }
+}
+ tabsBackground()
 
-infoContact.addEventListener('click', function(){
-    infoContent.innerHTML = infoBodyContact()}
-   ) 
+infoMessage.addEventListener('click', function(){
+    console.log('infoMessage has been activated!!');
+    infoBodyContains.innerHTML = infoMessageCall();
+})
+
+contactInfo.addEventListener('click', function(){
+    console.log('contactInfo has been activated!!');
+    infoBodyContains.innerHTML = infoBodyContact();
+})
+
+faq.addEventListener('click', function(){
+    console.log('faq has been activated!!');
+    infoBodyContains.innerHTML = faqInfo();
+})

@@ -74,15 +74,6 @@ textarea:focus{
 
 }
 
-#infoBodyTabs a[class=active] {
-    color: red;
-}
-
-#infoBodyTabs a[class= inactive] {
-    color: red;
-}
-
-
 #messageButtons button{
     background: #0e978d;
     color: #f2f2f2;
