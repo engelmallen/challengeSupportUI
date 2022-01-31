@@ -1,5 +1,8 @@
 let ticketGroup = document.getElementById('ticketGroup')
 let ticketItem = document.getElementsByClassName('ticketItem')
+let infoContent = document.getElementById('infoContent')
+let infoContact = document.getElementById('infoContact')
+let infoMessage = document.getElementById('infoMessage')
 
 let ticketCurVal= "Ticket 1"
 let infoBodyItems= ""
@@ -11,7 +14,7 @@ let ticketList = ["Ticket 1","Ticket 2","Ticket 3"]
 let ticket = (x,y) =>{
     let currentTicket = `<li id="${x}" class="ticketItem list-group-item d-flex justify-content-between align-items-left border border-0 rounded-0" onclick="">
     <div class="align-flex-center px-5 py-1 fs-5 fw-bolder">${x}</div>
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#16aa9c" class="bi bi-x-lg align-self-center" viewBox="0 0 16 16">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#05523e" class="bi bi-x-lg align-self-center" viewBox="0 0 16 16">
       <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
       <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
     </svg>
@@ -44,7 +47,7 @@ let ticketEvent = () => {
             ticketItem[i].addEventListener('click', function (e) {
             ticketCurVal = e.target.parentElement.id;
             console.log(ticketCurVal)  
-            doIt()
+            finishTickets()
         })
  
             }
@@ -60,9 +63,19 @@ const createTickets = () =>{
     }
 
 
-let doIt = () => {
+let finishTickets = () => {
     createTickets()
     ticketValidation()
     ticketEvent()
 }
-doIt()
+finishTickets()
+
+//info Creation: (infoContent)
+
+infoMessage.addEventListener('click', function(){
+    infoContent.innerHTML = infoMessageCall()}
+   ) 
+
+infoContact.addEventListener('click', function(){
+    infoContent.innerHTML = infoBodyContact()}
+   ) 

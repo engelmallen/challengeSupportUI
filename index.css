@@ -2,6 +2,9 @@
     padding: 0;
 } */
 
+*{
+    box-sizing: border-box; 
+}
 .motherGrey {
     background: #36404a;
 }
@@ -12,6 +15,18 @@
 .motherGreen {
     background: #16aa9c;
 }
+
+.motherGreyColor {
+    color: #b1b5b8;
+}
+
+.MotherSecundaryGrayColor{
+    color: #4b535e;
+}
+.motherGreenColor {
+    color: #16aa9c;
+}
+
 
 /* #ticketGroup button {
     background: #f4f8f7;
@@ -42,6 +57,14 @@
 
 }
 
+#floatingTextarea{
+    resize: none;
+
+}
+
+textarea:focus{
+   outline: 0;
+}
 .unsTicket{
     background: #0e978d;
 }
@@ -57,4 +80,16 @@
 
 #infoBodyTabs a[class= inactive] {
     color: red;
+}
+
+
+#messageButtons button{
+    background: #0e978d;
+    color: #f2f2f2;
+    /* border: none;
+    margin-left: 10px; */
+}
+
+.rotate45{
+    transform: rotate(320deg);
 }

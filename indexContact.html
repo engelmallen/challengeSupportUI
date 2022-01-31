@@ -20,41 +20,25 @@
           <div id="searchBarArea" class="bg-secondary p-2">
             <input type="text" class="rounded" />
           </div>
-          <div id="infoHeader" class="">
-            <div
-              id="ticketGroup"
-              class="btn-group bg-warning"
-              role="group"
-              aria-label="Basic example"
-            >
-              <button type="button" class="btn btn-light px-5">Ticket 1</button>
-              <button type="button" class="btn btn-secondary px-5">
-                Ticket 2
-              </button>
-              <button type="button" class="btn btn-secondary px-5">
-                Ticket 3
-              </button>
-              <button type="button" class="btn btn-secondary rounded-0 px-5">
-                Add New
-              </button>
-            </div>
+          <div id="infoHeader" class="pt-2 motherGreen w-sm-100">
+            <ul id="ticketGroup" class="list-group list-group-horizontal">
+              
+            </ul>
+
           </div>
         </div>
 
         <div id="infoContent " class="col-7">
           <div id="infoBody " class="mt-4">
             <ul id="infoBodyTabs" class="nav nav-tabs border-0">
-              <li class="nav-item">
-                <a class="nav-link  border-bottom" href="#">Message</a>
+              <li id="infoMessage" class="nav-item infoBodyItems fw-bolder border border-end-0">
+                <a class="nav-link active py-3 px-5 text-secondary" href="#">Message</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Contact Info</a>
+              <li id="contactInfo" class="nav-item infoBodyItems fw-bold border">
+                <a class="nav-link py-3 px-5 inactive  text-secondary" href="#">Contact Info</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">FAQ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled d-none" href="#">Disabled</a>
+              <li id="faq" class="nav-item infoBodyItems fw-bold border border-start-0">
+                <a class="nav-link py-3 px-5 inactive text-secondary" href="#">FAQ</a>
               </li>
             </ul>
 
@@ -62,8 +46,20 @@
               id="infoBodyContains"
               class="p-4 pb-5 border border rounded-bottom rounded-end">
                 <div id="contactInfo" class="">
-                  <div class="fw-bolder text-success mb-1">CONTACT</div>
-                  <table class="table">
+                  
+                  <div class="fw-bolder d-flex justify-content-between text-success mb-1">CONTACT
+                    <svg  xmlns="http://www.w3.org/2000/svg" 
+                          width="16" 
+                          height="16" 
+                          fill="#36404a" 
+                          class="minusButton bi bi-dash-lg align-self-end" 
+                          viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" 
+                            d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z"/>
+                    </svg>
+                  </div>
+                  
+                  <table id="contactTable" class="table">
                     <tbody>
                       <tr>
                         <td class="fw-bold">Name</td>
@@ -99,8 +95,18 @@
                   </table>
 
                   <div id="addressInformation">
-                    <div class="fw-bolder text-success mb-1">ADDRESS INFORMATION</div>
-                    <table class="table">
+                    <div class="fw-bolder text-success  d-flex justify-content-between  mb-1">ADDRESS INFORMATION
+                      <svg  xmlns="http://www.w3.org/2000/svg" 
+                          width="16" 
+                          height="16" 
+                          fill="#36404a" 
+                          class="minusButton bi bi-dash-lg align-self-end" 
+                          viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" 
+                            d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z"/>
+                    </svg>
+                    </div>
+                    <table id="addressInfoTable" class="table">
                       <tbody>
                         <tr>
                           <td class="fw-bold">Street</td>
@@ -127,8 +133,18 @@
                   </div>
 
                   <div id="troubleTicketHistory">
-                  <div class="fw-bolder text-success mb-1">TROUBLE TICKET HISTORY</div>
-                    <table class="table">
+                  <div class="minusButton fw-bolder text-success mb-1  d-flex justify-content-between ">TROUBLE TICKET HISTORY
+                    <svg  xmlns="http://www.w3.org/2000/svg" 
+                          width="16" 
+                          height="16" 
+                          fill="#36404a" 
+                          class="bi bi-dash-lg align-self-end" 
+                          viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" 
+                            d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z"/>
+                    </svg>
+                  </div>
+                    <table id="torubleTicketTable" class="table">
                       <thead class="borde border-info">
                         <tr class="border-0">
                           <th scope="col">Name</th>
@@ -295,5 +311,7 @@
     </div>
 
     <script src="index.js"></script>
+    <script src="messages.js"></script>
+    <script src="contactInfo.js"></script>
   </body>
 </html>
