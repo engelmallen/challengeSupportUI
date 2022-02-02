@@ -1,5 +1,5 @@
 
-let infoBodyContact = () => {
+let infoBodyContact = () => { 
     return ` 
  <div id="contactInfo" class="">
    

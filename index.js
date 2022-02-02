@@ -5,7 +5,7 @@ let infoBodyItems = document.getElementsByClassName('infoBodyItems')
 let infoMessage = document.getElementById('infoMessage')
 let contactInfo = document.getElementById('contactInfo')
 let faq = document.getElementById('faq')
-
+ 
 let ticketCurVal= "Ticket 1"
 // let infoBodyItems= ""
 

@@ -1,4 +1,4 @@
-const faqInfo = () => {
+const faqInfo = () => { 
     return `
   <div id="FAQ" class="">
     <ul class="list-group list-group-flush">

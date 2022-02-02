@@ -1,6 +1,6 @@
 let infoMessageCall = () => {
     return `        
-  <div
+  <div 
     id="infoMessageHeader p-3"
     class="d-inline-flex justify-content-between w-100"
   >
